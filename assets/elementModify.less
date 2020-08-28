@@ -1,0 +1,292 @@
+@import './config.less';
+/*按钮样式 */
+.el-button {
+  border-radius: @btn-border-radius;
+}
+.el-button .iconfont-ccb {
+  font-size: 12px;
+}
+.el-button--default {
+  height: @btn-height-default;
+  background: @btn-bgColor;
+  border: @btn-border;
+  color: @btn-text-color;
+}
+.el-button--default:hover {
+  color: @btn-text-color-hover;
+  background-color: @btn-bgColor;
+  border: @btn-border;
+}
+.el-button--default:active,
+.el-button--default:focus {
+  color: @btn-bgColor;
+  background-color: @btn-bgColor-active;
+  border-color: @btn-bgColor-active;
+}
+
+.el-button--medium {
+  min-width: 100px;
+}
+.el-button--small {
+  min-width: 80px;
+}
+.el-button--mini {
+  min-width: 60px;
+}
+
+.el-button--primary {
+  color: @btn-bgColor;
+  height: @btn-height-default;
+  background-color: @btn-bgColor-active;
+  border-color: @btn-bgColor-active;
+}
+
+.el-button--danger {
+  color: @btn-bgColor;
+  height: @btn-height-default;
+}
+
+/* 输入框样式 */
+.el-input__inner {
+  border: 1px solid @input-border-color;
+  border-radius: @input-border-radius;
+}
+.el-input__inner:hover,
+.el-input__inner:focus {
+  border-color: @input-border-color-hover;
+}
+
+/* 复选框样式 */
+.el-checkbox__inner {
+  border: 1px solid #646464;
+}
+.el-checkbox__inner:hover,
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #2d72d3;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #2d72d3;
+  border-color: #2d72d3;
+}
+.el-checkbox__input + .el-checkbox__label,
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  color: #333333;
+}
+
+/* 表格样式 */
+.el-table {
+  color: @table-color-defalut;
+  font-size: @table-font-size;
+}
+.el-table thead {
+  color: @theard-color-default;
+  font-weight: 400;
+}
+.el-table th {
+  font-weight: 400;
+  height: 40px;
+  padding: 0;
+  background-color: @theard-bgColor;
+}
+.el-table td {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: #ffffff;
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #e1f2ff;
+}
+.el-table-column--selection .cell {
+  padding: 0 15px !important;
+}
+
+/* 表格中的复选框 */
+.el-table .el-checkbox__inner {
+  border: 1px solid #646464;
+}
+.el-table .el-checkbox__inner:hover,
+.el-table .el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: #646464;
+}
+.el-table .el-checkbox__input.is-checked .el-checkbox__inner,
+.el-table .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #ffffff;
+  border-color: #646464;
+}
+.el-table .el-checkbox__inner::after {
+  border: 1px solid #333333;
+  border-top: none;
+  border-left: none;
+}
+.el-table .el-checkbox__inner::before {
+  border: 1px solid #333333;
+  height: 0 !important;
+}
+
+/* 分页样式 */
+.el-pagination slot > span {
+  font-size: 12px !important;
+  font-weight: 400;
+  color: #333333;
+  height: 25px !important;
+  line-height: 25px !important;
+}
+.el-pagination__sizes,
+.el-pagination__sizes .el-select,
+.el-pagination__sizes .el-select .el-input {
+  height: 25px !important;
+  line-height: 25px !important;
+}
+.el-pagination .el-input .el-input__inner {
+  border-radius: 2px !important;
+  font-size: 12px !important;
+  border: 1px solid #e1e1e1;
+  height: 25px !important;
+  line-height: 25px !important;
+}
+.el-pagination .el-input .el-input__inner:hover {
+  border-color: #2d72d3;
+}
+.el-pagination .el-select .el-input.is-focus .el-input__inner {
+  border-color: #2d72d3;
+}
+.el-pagination__sizes .el-input--mini .el-input__icon {
+  line-height: 25px !important;
+}
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  margin: 0 5px;
+  background-color: #ffffff;
+  color: #898989;
+  min-width: 27px;
+  border-radius: 2px;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: #2d72d3;
+  color: #fff;
+}
+.el-pagination .btn-prev,
+.el-pagination .btn-next {
+  border: 1px solid #e1e1e1;
+  height: 25px;
+}
+.el-pagination button,
+.el-pagination span:not([class*='suffix']) {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+}
+.el-pagination__editor {
+  height: 25px;
+}
+.el-pager li {
+  height: 25px;
+  line-height: 25px;
+}
+.el-pager li:hover {
+  color: #2d72d3 !important;
+}
+.el-pager li:hover.active {
+  color: #fff !important;
+}
+
+/* 树形控件样式 */
+.treeText {
+  color: #333333;
+}
+.el-tree-node__expand-icon {
+  color: #758ebb;
+}
+.el-tree-node__content {
+  height: 40px;
+  font-size: 12px;
+  border-left: 3px solid #fff;
+}
+.el-tree-node__children {
+  // 机构树层级缩进
+  padding-left: 8px;
+}
+.el-tree-node__content i {
+  color: #758ebb;
+}
+.el-tree-node__content .custom-tree-node {
+  color: #333333;
+}
+.el-tree-node:focus > .el-tree-node__content,
+.el-tree-node__content:hover {
+  background-color: #e5f0ff;
+  border-left: 3px solid #2d72d3;
+}
+.el-tree-node:focus > .el-tree-node__content .custom-tree-node,
+.el-tree-node__content:hover .custom-tree-node {
+  color: #2d72d3;
+}
+.el-tree-node:focus > .el-tree-node__content i,
+.el-tree-node__content:hover i {
+  color: #2d72d3;
+}
+
+/* 左侧导航样式 */
+.el-menu {
+  background: #f5f5f5;
+}
+.el-menu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+.el-menu-item:focus,
+.el-menu-item:hover {
+  outline: 0;
+  background-color: #ebebeb;
+}
+.el-menu-item.is-active {
+  color: #333;
+  background: #ebebeb;
+}
+.el-submenu {
+  font-size: 14px;
+  color: #333;
+}
+.el-submenu.is-active {
+  background: #e1e1e1;
+}
+
+/* breadcrumb last EL 样式替换 如有冲突 注释 */
+.el-breadcrumb {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  .el-breadcrumb__item {
+    &:last-child {
+      .el-breadcrumb__inner {
+        color: #2d72d3;
+      }
+    }
+  }
+}
+
+/*  */
+.el-form-item__label,
+.el-form-item__content {
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: 400;
+  color: rgba(33, 33, 33, 1);
+}
+
+/* 新建修改form item 及文字样式  有冲突 请注释*/
+.el-input__inner {
+  height: 35px !important ;
+  border-radius: 0px;
+  line-height: 35px;
+}
+.el-form-item__label {
+  line-height: 35px !important;
+}

@@ -1,0 +1,7 @@
+export { default as DeclarationList } from './DeclarationList.vue'
+export { default as FaultNew } from './FaultNew.vue'
+export { default as FaultQuery } from './FaultQuery.vue'
+export { default as ListConfirmedFaults } from './ListConfirmedFaults.vue'
+export { default as NewDeclaration } from './NewDeclaration.vue'
+export { default as ShieldingAlarmList } from './ShieldingAlarmList.vue'
+export { default as UnacknowledgedFaultList } from './UnacknowledgedFaultList.vue'
